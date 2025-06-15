@@ -32,6 +32,11 @@ elif s == "n":
     i = name .rfind(")")
     if i != -1:
         name = name[:i]+ '\\' + name[i:] 
+    
+    i = 0
+    i = name .rfind("!")
+    if i != -1:
+        name = name[:i]+ '\\' + name[i:] 
     print(name)
 
 
