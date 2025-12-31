@@ -1,5 +1,7 @@
 #!/bin/python3
 # get value for edit inner text 
+import os
+
 s = input("Is commit (y/n): ")
 name = ""
 if s == "y":
@@ -9,6 +11,8 @@ if s == "y":
 
     print("--------------------------")
     print(name)
+    os.system('echo "' +name+'"'+" | xclip -selection clipboard")
+    
 elif s == "n":
     name = input("Enter name: ")
 
@@ -38,5 +42,6 @@ elif s == "n":
     if i != -1:
         name = name[:i]+ '\\' + name[i:] 
     print(name)
+    os.system('echo "' +name+'"'+" | xclip -selection clipboard")
 
 
