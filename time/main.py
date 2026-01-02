@@ -4,7 +4,7 @@ min = int(input("Please set minute : "))
 sec = int(input("Please set second : "))
 first_date = datetime.datetime(datetime.datetime.now().year,datetime.datetime.now().month, datetime.datetime.now().day, hour, min, sec)
 total_seconds = hour * 3600 + min * 60 + sec
-
+print("------------------------")
 # تقسیم زمان بر 4
 divided_seconds = total_seconds / 4
 
